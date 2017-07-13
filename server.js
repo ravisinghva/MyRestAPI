@@ -1,3 +1,7 @@
+/* jshint esversion: 6 */
+/* jshint node: true */
+
+'use strict';
 
 let express = require('express');
 let app = express();

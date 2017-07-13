@@ -1,4 +1,8 @@
+/* jshint esversion: 6 */
+/* jshint node: true */
+
 'use strict';
+
 module.exports = function(app) {
   var placeService = require('../services/placeService');
   // myAPI Routes parameter 
