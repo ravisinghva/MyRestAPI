@@ -2,16 +2,23 @@
   "name": "my-places-api",
   "version": "1.0.0",
   "description": "Rest API for my places app",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.11.0",
     "mongoose": "^4.10.2",
-    "body-parser": "1.17.2"
+    "body-parser": "1.17.2",
+    "config": "^1.20.1",
+     "morgan": "^1.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha":"^3.4.2",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "SET NODE_ENV=dev && node server.js",
+    "test": "mocha --timeout 10000"
   },
   "author": "Ravi Singh",
-  "license": ""
+  "license": "ISC"
 }

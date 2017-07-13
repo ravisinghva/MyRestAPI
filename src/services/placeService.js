@@ -1,5 +1,6 @@
 'use strict';
 
+var apiModel = require('../models/placeModel.js');
 var mongoose = require('mongoose'),
   Places = mongoose.model('Places');
 
@@ -44,6 +45,12 @@ function populateData(){
       console.log(err);
   });
 }
+
+// Get All Places
+exports.home = function(req, res) {
+    // show welcome message
+    res.json({message: "Welcome to REST API!"});     
+};
 
 // Get All Places
 exports.get_all_places = function(req, res) {
